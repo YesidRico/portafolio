@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss"
+          "styleext": "css"
         }
       },
       "architect": {
@@ -27,9 +27,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/plugins/bootstrap/css/bootstrap.css",
+              "src/assets/plugins/icons/ionicons.css",
+              "src/assets/plugins/fluidbox/css/fluidbox.min.css",
+              "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/plugins/jquery/jquery-3.2.1.min.js",
+              "src/assets/plugins/jquery/tether.min.js",
+              "src/assets/plugins/bootstrap/js/bootstrap.js",
+              "src/assets/plugins/isotope.pkgd.min.js",
+              "src/assets/plugins/jquery/jquery.waypoints.min.js",
+              "src/assets/plugins/progressbar/js/progressbar.min.js",            
+              "src/assets/plugins/fluidbox/js/jquery.fluidbox.min.js",
+              "src/assets/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -76,7 +88,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": [],
             "assets": [
